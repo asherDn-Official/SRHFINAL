@@ -24,7 +24,7 @@ exports.sendWhatsApp = async (req, res) => {
         reason,
         "Grow",
       ]; // Customize as needed
-      attachmenturl = `https://asherdn.com/${reason}.pdf`;
+      attachmenturl = `https://superstarretailer.com/${reason}.xlsx`;
       break;
     // case "otp":
     //   campaignName = "SRH_OTP";
