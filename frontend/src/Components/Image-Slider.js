@@ -8,16 +8,16 @@ export const Imageslider = () => {
     <ReactCompareSlider
       itemOne={
         <ReactCompareSliderImage
-          src="./images/Normal-Retailer.WEBP"
-          srcSet="./images/Normal-Retailer.WEBP"
+          src="./images/Normal-Retailer.webp"
+          srcSet="./images/Normal-Retailer.webp"
           alt="Image one"
           className="sliderImagemobile"
         />
       }
       itemTwo={
         <ReactCompareSliderImage
-          src="./images/SuperStar-Retailer.WEBP"
-          srcSet="./images/SuperStar-Retailer.WEBP"
+          src="./images/SuperStar-Retailer.webp"
+          srcSet="./images/SuperStar-Retailer.webp"
           alt="Image two"
           className="sliderImagemobile"
         />

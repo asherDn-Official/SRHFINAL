@@ -224,7 +224,7 @@ const ZoomableImageCarousel = () => {
           centered
         >
           <Modal.Header closeButton>
-            <Modal.Title>Please Join with us</Modal.Title>
+            <Modal.Title>Want to See Full Story</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form
