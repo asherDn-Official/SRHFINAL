@@ -1,9 +1,15 @@
+import { Link, useNavigate } from "react-router-dom";
 export default function SuperStarRetailerKit() {
+  const navigate = useNavigate();
+
+  function linktoWhatsApp() {
+    window.open("https://wa.me/c/919715593777", "_blank");
+  }
   return (
     <div>
       <div class="Superhundredvh">
         <div class="Superimagedivv">
-          <img class="growthimg" src="./images/Group 742.png" alt="" />
+          <img class="growthimg" src="./images/mockupImageNew.png" alt="" />
         </div>
         <div class="widthononeside">
           <div class="content">
@@ -12,18 +18,9 @@ export default function SuperStarRetailerKit() {
             </div>
             <div>This powerful bundle includes:</div>
             <ul>
-              <li>
-                Ultimate Retailer Growth Planner: Strategize and track your way
-                to growth with a planner designed for retailers.
-              </li>
-              <li>
-                Annamalai 2.0 Storyboard: Gain insights and inspiration from
-                real retail success stories.
-              </li>
-              <li>
-                Dreams to Action: Transform your retail dreams into achievable
-                goals with this motivational guide.
-              </li>
+              <li>Ultimate Retailer Growth Planner</li>
+              <li>Annamalai 2.0 Storyboard</li>
+              <li>Dreams to Action</li>
             </ul>
 
             <div>
@@ -32,7 +29,7 @@ export default function SuperStarRetailerKit() {
             </div>
           </div>
           <div class="buttondivv">
-            <button type="submit" class="buttonclass">
+            <button onClick={linktoWhatsApp} type="submit" class="buttonclass">
               Purchase
             </button>
           </div>

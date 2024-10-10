@@ -12,6 +12,7 @@ export default function Form({ actionType, toolName, handleClose }) {
   const [otpButton, setOtpButton] = useState(true);
   const [otpText, setOtpText] = useState("");
 
+  const API_URI = "https://superstarretailer.com";
   const status = "loggedin";
 
   const [formdetail, setFormDetail] = useState({
@@ -37,13 +38,10 @@ export default function Form({ actionType, toolName, handleClose }) {
   const getOtp = async () => {
     if (formdetail.phonenumber) {
       try {
-        const response = await axios.post(
-          "http://localhost:4000/v1/api/generate-otp",
-          {
-            name: formdetail.name,
-            mobileNumber: "+91" + formdetail.phonenumber,
-          }
-        );
+        const response = await axios.post(`${API_URI}/v1/api/generate-otp`, {
+          name: formdetail.name,
+          mobileNumber: "+91" + formdetail.phonenumber,
+        });
         console.log(response);
         setOtpSection(true); // Show OTP section after OTP generation
         setOtpText("OTP Sent. Please check your phone.");
@@ -59,12 +57,9 @@ export default function Form({ actionType, toolName, handleClose }) {
   const verifyOtp = async () => {
     if (formdetail.otp) {
       try {
-        const response = await axios.post(
-          "http://localhost:4000/v1/api/verify-otp",
-          {
-            otp: formdetail.otp,
-          }
-        );
+        const response = await axios.post(`${API_URI}/v1/api/verify-otp`, {
+          otp: formdetail.otp,
+        });
         if (response.status === 200) {
           setOtpVerified(true);
           setSubmitButton(true);
@@ -87,15 +82,12 @@ export default function Form({ actionType, toolName, handleClose }) {
     if (otpVerified) {
       try {
         console.log("formTitle", actionType, "reason", toolName);
-        const response = await axios.post(
-          "http://localhost:4000/v1/api/send-whatsapp",
-          {
-            name: formdetail.name,
-            mobileNumber: "+91" + formdetail.phonenumber,
-            reason: toolName, // Use the correct naming here
-            formTitle: actionType, // Use the correct naming here
-          }
-        );
+        const response = await axios.post(`${API_URI}/v1/api/send-whatsapp`, {
+          name: formdetail.name,
+          mobileNumber: "+91" + formdetail.phonenumber,
+          reason: toolName, // Use the correct naming here
+          formTitle: actionType, // Use the correct naming here
+        });
         console.log(response);
         setFormDetails((prevArray) => [...prevArray, formdetail]);
         setOtpText("Form submitted successfully.");

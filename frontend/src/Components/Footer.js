@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div>
@@ -10,11 +11,9 @@ export default function Footer() {
               class="footer-contact-icon footer-icon-call"
             />
             <h3 class="footer-contact-title footer-title-call">Call Us</h3>
+
             <p class="footer-contact-details footer-details-call">
-              +91 9988884541
-            </p>
-            <p class="footer-contact-details1 footer-details-call">
-              +91 9558282255
+              +91 9715593777
             </p>
           </div>
           <div class="footer-contact-item footer-contact-write">
@@ -25,7 +24,7 @@ export default function Footer() {
             />
             <h3 class="footer-contact-title footer-title-write">Write Us</h3>
             <p class="footer-contact-details footer-details-write">
-              growthranjith121@gmail.com
+              growthranjith@gmail.com
             </p>
           </div>
           <div class="footer-contact-item footer-contact-visit">
@@ -36,38 +35,53 @@ export default function Footer() {
             />
             <h3 class="footer-contact-title footer-title-visit">Visit Us</h3>
             <p class="footer-contact-details footer-details-visit">
-              122, Kamarajar street,
+              1,Alagumalai Nagar,
               <br />
-              Raja Annamalalpuram,
+              Saralaipatti Collectorate,
               <br />
-              Dhindukkal-645055
+              Tamil Nadu 624004
             </p>
           </div>
         </div>
         <div class="footer-social-icons">
-          <a class="social-liknosnf" href="#">
+          <a
+            class="social-liknosnf"
+            href="https://www.instagram.com/growthranjith"
+            target="_blank"
+          >
             <img
               src="./images/insta.png"
               alt="Instagram"
               class="footer-social-icon footer-icon-instagram"
             />
           </a>
-          <a class="social-liknosnf" href="#">
+          <a
+            class="social-liknosnf"
+            href="https://www.facebook.com/growthranjithofficial/"
+            target="_blank"
+          >
             <img
               src="./images/face.png"
               alt="Facebook"
               class="footer-social-icon footer-icon-facebook"
             />
           </a>
-          <a class="social-liknosnf" href="#">
+          <a
+            class="social-liknosnf"
+            target="_blank"
+            href="https://www.youtube.com/@GrowthRanjith"
+          >
             <img
               src="./images/you.png"
               alt="YouTube"
               class="footer-social-icon footer-icon-youtube"
             />
           </a>
-          <a class="social-liknosnf" href="#">
-            {" "}
+          <a
+            class="social-liknosnf"
+            href="https://www.linkedin.com/in/growthranjithofficial/"
+            target="_blank"
+          >
             <img
               src="./images/linkldin.png"
               alt="LinkedIn"

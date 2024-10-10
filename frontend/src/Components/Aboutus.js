@@ -26,10 +26,16 @@ export default function Aboutus() {
 
         <div className="jointsuperflex12">
           <div className="joinoutsuperkitparagaraph">
-            Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            {/* Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis.
             className aptent taciti sociosqu ad litora torquent per conubia
-            nostra, per inceptos himenaeos.
+            nostra, per inceptos himenaeos. */}
+            Welcome to the Superstar Retailer Hub (SRH) – a dynamic community
+            where passionate retailers come together to grow, learn, and thrive.
+            At SRH, we believe in the power of collaboration and shared
+            knowledge to unlock the true potential of every retailer, whether
+            you’re just starting out or looking to take your business to the
+            next level.
           </div>
         </div>
         <div className="imageflexdiv">
@@ -46,9 +52,9 @@ export default function Aboutus() {
           <div className="CommunityForm">Join Our Family</div>
           <div className="coummunityflexdiv">
             <div className="communitytextpara">
-              Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
-              className aptent taciti sociosq
+              Become a part of the Superstar Retailer Community! Join us today
+              and unlock exclusive resources, insights, and support to help your
+              retail business thrive.
             </div>
           </div>
           <div>
@@ -62,7 +68,11 @@ export default function Aboutus() {
         <div class="banner-content">
           <h2>Connect with our Expert</h2>
           <p>Get personalized advice and solutions for your business needs.</p>
-          <a href="#" class="cta-button">
+          <a
+            href="https://calendly.com/growthranjith/60min?month=2024-10"
+            target="_blank"
+            class="cta-button"
+          >
             Contact our Expert
           </a>
         </div>

@@ -39,7 +39,7 @@ const ConfettiComponent = () => {
           </div>
 
           <button class="back-button" onClick={homePageRedirect}>
-            Back {`>>`}
+            Back {`<<`}
           </button>
         </div>
       </header>

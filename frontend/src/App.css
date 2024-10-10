@@ -21,7 +21,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 31px;
-  text-align: center;
+  text-align: left;
   color: #313166;
   width: 900px;
 }
@@ -140,15 +140,27 @@ body {
   color: #ec396f;
   border-radius: 5px;
 }
+
+.getotpbuttonstyle:hover {
+  background-image: linear-gradient(to right, #313166, #ec396f);
+  cursor: pointer;
+}
+
+.getotpbuttonstyle:hover {
+  color: #fff;
+}
 .submitButton {
   font-family: Poppins;
-  background-color: #cfcfcf;
   color: #fff;
   width: 180px;
   height: 45px;
   border: none;
   border-radius: 5px;
   font-size: 19px;
+  background: #ec396f;
+}
+
+.submitButton:hover {
   background-image: linear-gradient(to right, #313166, #ec396f);
 }
 
@@ -319,13 +331,13 @@ body {
   }
   .submitButton {
     font-family: Poppins;
-    background-color: #cfcfcf;
     color: #fff;
     width: 133px;
     height: 39px;
     border: none;
     border-radius: 5px;
     font-size: 15px;
+    background: #ec396f;
   }
 
   .buttonclasssflex {
@@ -405,7 +417,8 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #313166;
+  background-image: linear-gradient(to right, #313166, #ec396f);
+  color: #fff;
 }
 
 .banner-image {
@@ -1148,7 +1161,6 @@ header {
 }
 
 .button-speech-bubble {
-  background-color: #ff1493;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -1156,7 +1168,20 @@ header {
   cursor: pointer;
   font-size: 1em;
   white-space: nowrap;
+  background: #ec396f;
 }
+
+.button-speech-bubble:hover {
+  background-image: linear-gradient(to right, #313166, #ec396f);
+}
+
+.back-button:hover {
+  background-image: linear-gradient(to right, #313166, #ec396f);
+}
+
+/* .button-speech-bubble:hover {
+  background-image: linear-gradient(to right, #313166, #ec396f);
+} */
 
 @media (max-width: 600px) {
   .comparison-speech-bubble {
@@ -1896,13 +1921,16 @@ ul {
   margin-bottom: 15px;
 }
 .tool-button {
-  background-color: #ff4081;
+  background-color: #ec396f;
   color: white;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+}
+
+.tool-button:hover {
   background-image: linear-gradient(to right, #ec396f, #41438e);
 }
 
@@ -2552,6 +2580,18 @@ small {
     color: #ec396f;
   }
 
+  .clasonbutton:hover {
+    background-image: linear-gradient(to right, #313166, #ec396f);
+    border: 1px solid white;
+  }
+
+  .clasonbutton:hover {
+    border-radius: 50px;
+    padding: 9px 10px 10px 15px;
+    border: none;
+    color: #fff;
+  }
+
   .buttondivflex {
     display: flex;
     justify-content: center;
@@ -2740,31 +2780,35 @@ small {
 
 .Superhundredvh {
   width: 100%;
-  height: auto;
   display: flex;
-  column-gap: 4%;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: center;
+  margin-top: 35px;
 }
 .content {
   /* padding-top: 100px; */
   color: #070707;
   text-align: justify;
-  padding: 12% 6% 0% 6%;
+  /* padding: 12% 6% 0% 6%; */
   font-size: 23px;
   align-items: center;
   line-height: 40px;
 }
 .widthononeside {
-  width: 61%;
+  width: 40%;
 }
 .buttonclass {
-  width: 16%;
+  width: 20%;
   padding: 8px 20px 8px 20px;
-  background: #ff1493;
-
+  background: #ec396f;
   border: none;
-  /* cursor: pointer; */
   border-radius: 20px;
   color: #fff;
+}
+
+.buttonclass:hover {
+  background-image: linear-gradient(to right, #313166, #ec396f);
 }
 
 .buttondivv {
@@ -2776,12 +2820,15 @@ small {
 }
 
 .growthimg {
-  padding: 17% 12px 10px 10%;
+  /* padding: 17% 12px 10px 10%; */
+  width: 90%;
 }
 .spandivv {
-  font-size: 40px;
-  text-align: center;
+  font-size: 37px;
+  line-height: 50px;
+  text-align: left;
   padding-bottom: 21px;
+  font-weight: 500;
 }
 
 @media (max-width: 600px) {
@@ -2795,9 +2842,9 @@ small {
   .content {
     /* padding-top: 100px; */
     color: #070707;
-    text-align: justify;
+    text-align: left;
     padding: 5% 6% 0% 6%;
-    font-size: 18px;
+    font-size: 16px;
     align-items: center;
     line-height: 30px;
   }
@@ -2807,8 +2854,7 @@ small {
   .buttonclass {
     width: 30%;
     padding: 8px 20px 8px 20px;
-    background: #ff1493;
-
+    background: #ec396f;
     border: none;
     /* cursor: pointer; */
     border-radius: 20px;
@@ -2828,7 +2874,8 @@ small {
   }
   .spandivv {
     font-size: 28px;
-    text-align: center;
+    line-height: 32px;
+    text-align: left;
     padding-bottom: 21px;
   }
   .Superimagedivv {
@@ -2859,8 +2906,7 @@ small {
   .buttonclass {
     width: 30%;
     padding: 8px 20px 8px 20px;
-    background: #ff1493;
-
+    background: #ec396f;
     border: none;
     /* cursor: pointer; */
     border-radius: 20px;
@@ -2890,4 +2936,14 @@ small {
 
 .sixnkejk423jk3434 {
   width: 100%;
+}
+
+.Superimagedivv {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .Superimagedivv {
+    width: 100%;
+  }
 }

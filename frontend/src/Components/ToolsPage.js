@@ -78,7 +78,7 @@ export default function ToolsPage() {
                   promoting upsells, cross-sells, or bundles to boost revenue.
                 </p>
                 <button
-                  onClick={() => handleShow("Events", "download")}
+                  onClick={() => handleShow("cartValue", "download")}
                   class="tool-button"
                 >
                   Download
@@ -99,7 +99,7 @@ export default function ToolsPage() {
                   more growth efficiently.
                 </p>
                 <button
-                  onClick={() => handleShow("Events", "download")}
+                  onClick={() => handleShow("80-20", "download")}
                   class="tool-button"
                 >
                   Download
@@ -124,7 +124,7 @@ export default function ToolsPage() {
                   "Why?" repeatedly, until the fundamental issue is uncovered.
                 </p>
                 <button
-                  onClick={() => handleShow("Events", "download")}
+                  onClick={() => handleShow("5why", "download")}
                   class="tool-button"
                 >
                   Download
