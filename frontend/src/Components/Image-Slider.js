@@ -1,11 +1,18 @@
+import react from "react";
+import AOS from "aos";
+import { useEffect } from "react";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
 
 export const Imageslider = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <ReactCompareSlider
+      data-aos="zoom-in-up"
       itemOne={
         <ReactCompareSliderImage
           src="./images/Normal-Retailer.webp"

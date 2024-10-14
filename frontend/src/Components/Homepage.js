@@ -5,7 +5,13 @@ import Imageslider from "./Image-Slider";
 import StoryBoard from "./StoryBoard";
 import JSConfetti from "js-confetti";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Homepage() {
+  useEffect(() => {
+    AOS.init();
+  });
   const navigate = useNavigate();
 
   const location = useLocation();
@@ -40,7 +46,7 @@ export default function Homepage() {
           id="myVideo"
         ></video>
       </div>
-      <div className="container-speech-bubble">
+      <div className="container-speech-bubble" data-aos="fade-up">
         <div className="comparison-speech-bubble" ref={lastSectionRef}>
           <div className="person-speech-bubble">
             <img
@@ -56,7 +62,7 @@ export default function Homepage() {
           </div>
         </div>
         <div className="question-speech-bubble">
-          Who will be Successful in Retail Market
+          Who will be Successful in Retail Market ?
         </div>
         <button className="button-speech-bubble" onClick={SucessfullReatiler}>
           Click here to Know the Answer <span> &gt;&gt; </span>
@@ -108,12 +114,12 @@ export default function Homepage() {
         </div>
       </div>
 
-      <Imageslider />
+      <Imageslider data-aos="fade-up" />
 
       <div>
         <div>
           <div>
-            <div className="whysuperstarRetaierhub">
+            <div className="whysuperstarRetaierhub" data-aos="zoom-in-up">
               <div className="superstarwhyimg">
                 <video
                   className="superstarkitgif"
@@ -416,7 +422,7 @@ export default function Homepage() {
           <StoryBoard />
         </div>
       </div>
-      <div className="container-ranjith">
+      <div className="container-ranjith" data-aos="fade-up">
         <div className="image-ranjith">
           <img src="./images/Group 742.png" alt="Ranjith" />
         </div>

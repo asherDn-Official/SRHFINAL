@@ -1,4 +1,12 @@
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Sixphase() {
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div>
       <div>
@@ -20,7 +28,7 @@ export default function Sixphase() {
 
         <div className="sixflexwidthDivsixPhase">
           <div className="flexwidthDivsixPhase">
-            <div className="maindivofthesixphase">
+            <div className="maindivofthesixphase" data-aos="fade-right">
               <div className="knowyourcustomers">Know your Customers</div>
               <div className="sixphasespageflex1">
                 <div className="knowyourCutsomersss">
@@ -52,7 +60,7 @@ export default function Sixphase() {
                 <img src="./images/Rectangle 677.png" alt="" />
               </div>
             </div>
-            <div className="maindivofthesixphase1">
+            <div className="maindivofthesixphase1" data-aos="fade-left">
               <div className="sixphasespageflex2">
                 <div className="firstsectionimagediv2">
                   <img src="./images/secondSectionImage.png" alt="" />
@@ -91,7 +99,7 @@ export default function Sixphase() {
                 </div>
               </div>
             </div>
-            <div className="maindivofthesixphase21">
+            <div className="maindivofthesixphase21" data-aos="fade-right">
               <div className="knowyourcustomers">
                 Keep your Customers Hooked !
               </div>
@@ -124,7 +132,7 @@ export default function Sixphase() {
                 <img src="./images/Rectangle 677.png" alt="" />
               </div>
             </div>
-            <div className="maindivofthesixphase1">
+            <div className="maindivofthesixphase1" data-aos="fade-left">
               <div className="sixphasespageflex2">
                 <div className="firstsectionimagediv2">
                   <img src="./images/amico.png" alt="" />
@@ -159,7 +167,7 @@ export default function Sixphase() {
                 </div>
               </div>
             </div>
-            <div className="maindivofthesixphase21">
+            <div className="maindivofthesixphase21" data-aos="fade-right">
               <div className="knowyourcustomers">Growth Machine</div>
               <div className="sixphasespageflex1">
                 <div className="knowyourCutsomersss">
@@ -189,7 +197,7 @@ export default function Sixphase() {
                 <img src="./images/Rectangle 677.png" alt="" />
               </div>
             </div>
-            <div className="maindivofthesixphase1">
+            <div className="maindivofthesixphase1" data-aos="fade-left">
               <div className="sixphasespageflex2">
                 <div className="firstsectionimagediv2">
                   <img src="./images/amico11.png" alt="" />
@@ -232,42 +240,42 @@ export default function Sixphase() {
         </div>
 
         <div className="asixflexwidthDivsixPhase">
-          <div className="sixthSixPhasemargin">
+          <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
               src="/images/firstSixPhase.png"
               alt=""
             />
           </div>
-          <div className="sixthSixPhasemargin">
+          <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
               src="/images/secondSixPhase.png"
               alt=""
             />
           </div>
-          <div className="sixthSixPhasemargin">
+          <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
               src="/images/thirdSixPhase.png"
               alt=""
             />
           </div>
-          <div className="sixthSixPhasemargin">
+          <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
               src="/images/fourthSixPhase.png"
               alt=""
             />
           </div>
-          <div className="sixthSixPhasemargin">
+          <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
               src="/images/fifthSixPhase.png"
               alt=""
             />
           </div>
-          <div className="sixthSixPhasemargin">
+          <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
               src="/images/sixthSixPhase.png"

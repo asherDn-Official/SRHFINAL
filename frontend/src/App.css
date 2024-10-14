@@ -28,7 +28,7 @@ body {
 .jointsuperflex12 {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .groupphotoimagesssrkit {
   width: 80%;
@@ -220,12 +220,13 @@ body {
     margin-top: 10px;
   }
   .groupphotoimagesssrkit {
-    width: 80%;
+    width: 100%;
   }
 
   .ssrkitbackground {
     background-color: #e5e5f1;
     background-image: radial-gradient(rgba(255, 255, 255, 0.5));
+    padding-top: 30px;
   }
   .imageflexdiv {
     display: flex;
@@ -234,9 +235,9 @@ body {
 
   .CommunityForm {
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
-    line-height: 42px;
+    line-height: 28px;
     text-align: center;
     color: #313166;
   }
@@ -277,9 +278,9 @@ body {
 
   .coummintyformlabel {
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 26px;
     text-align: left;
     color: #313166;
     margin-bottom: 10px;
@@ -303,7 +304,8 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 23px 10px 23px;
+    margin-bottom: 0px;
   }
 
   .communityinputboxes2 {
@@ -327,7 +329,7 @@ body {
     font-weight: 500;
     color: #ec396f;
     border-radius: 5px;
-    margin-top: 12px;
+    margin-top: 20px;
   }
   .submitButton {
     font-family: Poppins;
@@ -886,11 +888,11 @@ h1 {
   }
 
   .title-ranjith {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .subtitle-ranjith {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .paragraph-ranjith {
@@ -1125,7 +1127,7 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .person-speech-bubble {
@@ -1136,7 +1138,7 @@ header {
 
 .person-speech-bubble img {
   width: 100%;
-  max-width: 400px;
+  /* max-width: 400px; */
   height: auto;
 }
 
@@ -1185,16 +1187,18 @@ header {
 
 @media (max-width: 600px) {
   .comparison-speech-bubble {
-    flex-direction: column;
     align-items: center;
   }
   .person-speech-bubble {
-    width: 80%;
+    width: 50%;
+    margin: 0px;
+    min-width: 50%;
   }
   .question-speech-bubble,
   .button-speech-bubble {
     font-size: 1em;
     padding: 8px 16px;
+    margin-top: 14px;
   }
 }
 /* ------------------------------------HomePage-------------------------- */
@@ -1288,12 +1292,18 @@ header {
 }
 
 @media (max-width: 768px) {
+  .container-tool {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 7px 20px 7px;
+  }
   .hero-tool h1 {
     color: #ffffff;
     font-size: 25px;
-    font-weight: 550;
+    font-weight: 500;
     margin-bottom: 20px;
     text-align: left;
+    line-height: 32px;
   }
   .headingh3sonf {
     font-size: 18px;
@@ -1940,10 +1950,11 @@ ul {
     flex-direction: column;
   }
   .tool-image {
-    width: 96%;
+    width: 70%;
     height: auto;
     position: relative;
     left: 0px;
+    margin-top: 10px;
   }
   .tool-image1 {
     width: 96%;
@@ -1951,9 +1962,10 @@ ul {
     display: none;
   }
   .tool-image3 {
-    width: 96%;
+    width: 70%;
     height: auto;
     display: block;
+    margin-top: 10px;
   }
 }
 
@@ -2301,13 +2313,13 @@ small {
     font-weight: 500;
     line-height: 37px;
     color: #313166;
-    text-align: center;
+    text-align: left;
   }
   .superstarwhy {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 23px;
     text-align: justify;
     color: #313166;
     margin-top: 5px;
@@ -2316,7 +2328,7 @@ small {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 22px;
     text-align: justify;
     color: #313166;
     margin-top: 15px;
@@ -2331,13 +2343,14 @@ small {
     margin-top: 15px;
   }
   .superstarkitgif {
-    width: 100%;
+    width: 48%;
   }
   .image-ranjith {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 10px;
   }
   .text-ranjith {
     flex: 1 1 50%;
@@ -2352,9 +2365,9 @@ small {
   }
   .sixphasestextmainh3 {
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 35px;
+    line-height: 28px;
     background: -webkit-linear-gradient(
       rgba(49, 49, 102, 1),
       rgba(236, 57, 111, 1)
@@ -2368,8 +2381,8 @@ small {
     font-family: Poppins;
     font-size: 15px;
     font-weight: 400;
-    line-height: 28px;
-    text-align: justify;
+    line-height: 26px;
+    text-align: left;
     width: 1000px;
     padding: 15px;
   }
@@ -2381,8 +2394,18 @@ small {
   .hero-tool {
     background-color: #2a2a72;
     color: white;
-    padding: 46px 5px;
+    padding: 15px 5px;
     /* margin-bottom: 40px; */
+  }
+  .photo-images {
+    max-width: 65%;
+    height: auto;
+  }
+
+  .tagline-tool {
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 14px;
   }
   .jointsuperflex12 {
     display: flex;
@@ -2391,33 +2414,33 @@ small {
   }
   .joinoursuperkitpagefinal {
     font-family: Poppins;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 33px;
+    line-height: 28px;
     text-align: center;
     color: #313166;
     /* padding: 20px; */
   }
   .joinoutsuperkitparagaraph {
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
-    text-align: justify;
+    line-height: 26px;
+    text-align: left;
     color: #313166;
     width: 900px;
     padding: 15px;
   }
   .communitytextpara {
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 31px;
+    line-height: 26px;
     text-align: center;
     color: #313166;
     width: 900px;
     padding: 1px 20px 1px 20px;
-    text-align: justify;
+    text-align: left;
   }
   .card-container {
     padding-top: 50px;
@@ -2431,7 +2454,7 @@ small {
     text-align: center;
     color: #444482;
     margin-bottom: 0px;
-    font-size: 33px;
+    font-size: 26px;
     margin-top: 14px;
   }
 }
@@ -2439,6 +2462,22 @@ small {
 /* Praveen-CSS */
 /* Dhinesh-CSS */
 @media (max-width: 900px) {
+  .__rcs-handle-button {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+    place-content: center;
+    flex-shrink: 0;
+    width: 39px !important;
+    height: 39px !important;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    pointer-events: auto;
+    backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.125);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 4px;
+  }
   .sliderImagemobile {
     height: 250px !important;
   }
@@ -2447,6 +2486,7 @@ small {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url("../public/images/Whysuperstarkitimgae3.png");
   }
 
   .container-ranjith {
@@ -2475,33 +2515,50 @@ small {
   }
   .container-speech-bubble {
     text-align: center;
-    padding: 1em;
+    padding: 0.3em;
     background: #1e206d;
     width: 100%;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
+    padding-top: 1.5em;
   }
 
   .question-speech-bubble {
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-family: Poppins;
     font-size: 28px;
     font-weight: 500;
     line-height: 29px;
     font-size: 15px !important;
+    padding: 0px;
+  }
+
+  .image-ranjith img {
+    max-width: 60%;
+    height: auto;
+  }
+
+  .paragraph-ranjith {
+    font-size: 14px;
+    color: #313166;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: "Poppins", sans-serif;
   }
   .paratool {
-    line-height: 1.6;
-    font-size: 16px;
-    text-align: justify;
+    line-height: 23px;
+    font-size: 15px;
+    text-align: left;
     margin-bottom: 15px;
+    font-weight: 400;
   }
 
   .growth-tool-section {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
     margin-bottom: 0px;
   }
 }
@@ -2601,6 +2658,20 @@ small {
 }
 
 @media (max-width: 900px) {
+  .section-title {
+    text-align: center;
+    color: #313166;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .tool-content {
+    flex: 1 1;
+    padding: 15px 20px 25px 20px;
+  }
+  .image-container-hidden img {
+    width: 86%;
+    height: auto;
+  }
   .arrow {
     background: linear-gradient(108.98deg, #e0376a 0.96%, #7a1e3a 100%);
     border-radius: 50%;
@@ -2653,7 +2724,7 @@ small {
     padding-top: 40px;
   }
   .underthetitttlecont {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -2672,10 +2743,10 @@ small {
   }
   .underthecapcontent {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #fff;
-    margin-top: 50px;
+    margin-top: 41px;
   }
   .clasonbutton {
     border-radius: 50px;
@@ -2699,6 +2770,19 @@ small {
 /*---------------------- Story Board-------------- */
 
 @media (max-width: 900px) {
+  .tool-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .tool-description {
+    font-size: 15px;
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
   .fa {
     font-size: 20px;
     font-weight: 600;
@@ -2706,19 +2790,21 @@ small {
   .content-hidden {
     width: 100% !important;
     padding-left: 8px;
+    margin-top: 25px;
   }
   .aondsl {
-    font-size: 19px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 7px;
     color: #ffffff;
   }
   .title-hidden,
   .description-hidden {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 28px;
     margin-bottom: 10px;
     color: #ffffff;
-    text-align: justify;
+    text-align: left;
+    margin-top: -19px;
   }
   .dispsjkskskj232 {
     display: none;
@@ -2734,6 +2820,7 @@ small {
     text-decoration: none;
     font-weight: 400;
     margin-top: 10px;
+    font-size: 13px;
   }
 }
 

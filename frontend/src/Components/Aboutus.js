@@ -1,10 +1,15 @@
 import react from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Form from "./Form";
 
 export default function Aboutus() {
+  useEffect(() => {
+    AOS.init();
+  });
+
   const firstSectionRef = useRef(null);
   const location = useLocation();
 
@@ -47,7 +52,7 @@ export default function Aboutus() {
         </div>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="800">
         <div className="mainformdivcontainers" ref={firstSectionRef}>
           <div className="CommunityForm">Join Our Family</div>
           <div className="coummunityflexdiv">
@@ -78,6 +83,8 @@ export default function Aboutus() {
         </div>
         <div class="banner-image">
           <img
+            data-aos="fade-up"
+            data-aos-delay="700"
             src="./images/ranjithwithloptop.png"
             alt="Business expert with laptop"
           />
