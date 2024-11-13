@@ -22,6 +22,8 @@ export default function Form({ actionType, toolName, handleClose }) {
   const otpSectionRef = useRef(null);
   const [scrollToOtp, setScrollToOtp] = useState(false);
 
+  const API_URI = "https://superstarretailer.com";
+
   const status = "loggedin";
 
   const [thankuPopup, setThankuPopup] = useState(true);
@@ -51,13 +53,10 @@ export default function Form({ actionType, toolName, handleClose }) {
   const getOtp = async () => {
     if (formDetail.phonenumber) {
       try {
-        const response = await axios.post(
-          "http://localhost:4000/v1/api/generate-otp",
-          {
-            name: formDetail.name,
-            mobileNumber: "+91" + formDetail.phonenumber,
-          }
-        );
+        const response = await axios.post(`${API_URI}/v1/api/generate-otp`, {
+          name: formDetail.name,
+          mobileNumber: "+91" + formDetail.phonenumber,
+        });
         console.log(response);
         setOtpSection(true);
         setOtpText("OTP Sent. Please check your phone.");
@@ -78,12 +77,9 @@ export default function Form({ actionType, toolName, handleClose }) {
   const verifyOtp = async () => {
     if (formDetail.otp) {
       try {
-        const response = await axios.post(
-          "http://localhost:4000/v1/api/verify-otp",
-          {
-            otp: formDetail.otp,
-          }
-        );
+        const response = await axios.post(`${API_URI}/v1/api/verify-otp`, {
+          otp: formDetail.otp,
+        });
         if (response.status === 200) {
           setOtpVerified(true);
           setSubmitButton(true);
@@ -110,19 +106,16 @@ export default function Form({ actionType, toolName, handleClose }) {
     if (otpVerified) {
       try {
         console.log("formTitle", actionType, "reason", toolName);
-        const response = await axios.post(
-          "http://localhost:4000/v1/api/send-whatsapp",
-          {
-            name: formDetail.name,
-            mobileNumber: "+91" + formDetail.phonenumber,
+        const response = await axios.post(`${API_URI}/v1/api/send-whatsapp`, {
+          name: formDetail.name,
+          mobileNumber: "+91" + formDetail.phonenumber,
 
-            reason: toolName,
-            formTitle: actionType,
-          }
-        );
+          reason: toolName,
+          formTitle: actionType,
+        });
 
         if (response.status === 200) {
-          await axios.post("http://localhost:4000/v1/api/customers", {
+          await axios.post(`${API_URI}/v1/api/customers`, {
             customerName: formDetail.name,
             customerEmail: formDetail.email,
             storeName: formDetail.storeName,
@@ -132,7 +125,7 @@ export default function Form({ actionType, toolName, handleClose }) {
           console.log("actiontype:", actionType);
           console.log("ToolName :", toolName);
           if (actionType === "DirectDownload") {
-            const link = `http://localhost:3000/${toolName}.xlsx`;
+            const link = `${API_URI}/${toolName}.xlsx`;
             const a = document.createElement("a");
             a.href = link;
             a.download = `${toolName}.xlsx`; // Specify the file name
@@ -140,7 +133,7 @@ export default function Form({ actionType, toolName, handleClose }) {
             a.click();
             document.body.removeChild(a);
           } else if (actionType === "purchase") {
-            const link = `http://localhost:3000/${toolName}.pdf`;
+            const link = `${API_URI}/${toolName}.pdf`;
             const a = document.createElement("a");
             a.href = link;
             a.download = `${toolName}.pdf`; // Specify the file name

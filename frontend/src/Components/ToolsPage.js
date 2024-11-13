@@ -9,7 +9,7 @@ export default function ToolsPage() {
     formTitle: "",
     reason: "",
   });
-
+  const API_URI = "https://superstarretailer.com";
   // tools page:
   const handleClose = () => setShow(false);
   const handleShow = (toolName, actionType) => {
@@ -17,7 +17,7 @@ export default function ToolsPage() {
     setShow(true);
   };
   const handleDownload = (reason) => {
-    const link = `http://localhost:3000/${reason}.xlsx`;
+    const link = `${API_URI}/${reason}.xlsx`;
     const a = document.createElement("a");
     a.href = link;
     a.download = `${reason}.xlsx`; // Specify the file name
