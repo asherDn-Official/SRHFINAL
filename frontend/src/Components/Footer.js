@@ -35,11 +35,9 @@ export default function Footer() {
             />
             <h3 class="footer-contact-title footer-title-visit">Visit Us</h3>
             <p class="footer-contact-details footer-details-visit">
-              1,Alagumalai Nagar,
-              <br />
-              Saralaipatti Collectorate,
-              <br />
-              Tamil Nadu 624004
+            1,Alagumalai Nagar, <br />
+            Collectorate, Dindigul <br />
+            Tamil Nadu 624004
             </p>
           </div>
         </div>

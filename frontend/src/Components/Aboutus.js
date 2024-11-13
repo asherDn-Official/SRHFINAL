@@ -22,11 +22,12 @@ export default function Aboutus() {
       firstSectionRef.current?.scrollIntoView({});
     }
   }, [location]);
+
   return (
     <div>
       <div className="ssrkitbackground">
         <div className="joinoursuperkitpagefinal">
-          Join Our Superstar Retailer Community
+          Join Our Superstar Retailer Family
         </div>
 
         <div className="jointsuperflex12">
@@ -57,8 +58,8 @@ export default function Aboutus() {
           <div className="CommunityForm">Join Our Family</div>
           <div className="coummunityflexdiv">
             <div className="communitytextpara">
-              Become a part of the Superstar Retailer Community! Join us today
-              and unlock exclusive resources, insights, and support to help your
+              Become a part of the Superstar Retailer Family! Join us today and
+              unlock exclusive resources, insights, and support to help your
               retail business thrive.
             </div>
           </div>
@@ -85,7 +86,7 @@ export default function Aboutus() {
           <img
             data-aos="fade-up"
             data-aos-delay="700"
-            src="./images/ranjithwithloptop.png"
+            src="./images/ranjithwithloptop.webp"
             alt="Business expert with laptop"
           />
         </div>

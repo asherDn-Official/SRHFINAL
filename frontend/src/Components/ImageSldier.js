@@ -228,8 +228,8 @@ const ZoomableImageCarousel = () => {
           </Modal.Header>
           <Modal.Body>
             <Form
-              toolName={selectedTool.toolName}
-              actionType={selectedTool.actionType}
+              toolName="story"
+              actionType="story"
               handleClose={handleClose}
             />
           </Modal.Body>
