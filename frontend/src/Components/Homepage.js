@@ -37,6 +37,7 @@ export default function Homepage() {
     <div>
       <div className="videostyklebsavjhsd">
         <video
+          onClick={SucessfullReatiler}
           className="homePageHeroVideo"
           src="./images/Gr-Website-Video-Compressed.mp4"
           controls
@@ -44,9 +45,13 @@ export default function Homepage() {
           muted
           loop
           id="myVideo"
+          style={{ cursor: "pointer" }}
         ></video>
+        {/* <button className="button-speech-bubble" onClick={SucessfullReatiler}>
+          Click here to Know the Answer <span> &gt;&gt; </span>
+        </button> */}
       </div>
-      <div className="container-speech-bubble" data-aos="fade-up">
+      {/* <div className="container-speech-bubble" data-aos="fade-up">
         <div className="comparison-speech-bubble" ref={lastSectionRef}>
           <div className="person-speech-bubble">
             <img
@@ -67,7 +72,7 @@ export default function Homepage() {
         <button className="button-speech-bubble" onClick={SucessfullReatiler}>
           Click here to Know the Answer <span> &gt;&gt; </span>
         </button>
-      </div>
+      </div> */}
 
       <div className="banner-container">
         <div className="star-container">
