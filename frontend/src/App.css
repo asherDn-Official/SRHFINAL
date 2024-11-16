@@ -925,6 +925,24 @@ h1 {
 }
 
 /* /////////////////////////////////////////////////////////////////////////////-speech-bubble */
+.button-speech-bubble {
+  position: absolute;
+  top: 85%; /* Adjust this to position the button vertically */
+  left: 50%; /* Adjust this to position the button horizontally */
+  transform: translate(-50%, -50%); /* Centers the button */
+  padding: 10px 20px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: semi-transparent background */
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1; /* Ensures the button is on top of the video */
+}
 
 /* .container-speech-bubble {
     text-align: center;
@@ -1110,6 +1128,7 @@ header {
 .back-button {
   display: inline-block;
   padding: 8px 16px;
+  margin-top: 10px;
   background-color: #ec396f;
   color: #ffffff;
   border: none;
@@ -1220,9 +1239,9 @@ header {
   }
   .question-speech-bubble,
   .button-speech-bubble {
-    font-size: 1em;
+    font-size: 0.5em;
     padding: 8px 16px;
-    margin-top: 14px;
+    margin-top: 1px;
   }
 }
 /* ------------------------------------HomePage-------------------------- */
@@ -2251,6 +2270,7 @@ small {
 
 .homePageHeroVideo {
   width: 100%;
+  height: auto;
 }
 
 .sixthSixPhasemargin {
@@ -2348,6 +2368,7 @@ small {
 }
 .videostyklebsavjhsd {
   background-color: #bbf6ff;
+  position: relative;
 }
 
 /* Chandru-CSS */
@@ -2899,6 +2920,7 @@ small {
   }
   .dispsjkskskj232 {
     display: none;
+    height: 10px;
   }
   .back-button {
     display: inline-block;
@@ -2995,6 +3017,11 @@ small {
   margin-top: 50px;
 }
 .Superimagedivv {
+}
+
+.dispsjkskskj232 {
+  display: none;
+  height: 30px;
 }
 
 .growthimg {

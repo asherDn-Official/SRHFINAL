@@ -20,20 +20,27 @@ const ConfettiComponent = () => {
         </div>
         <div class="content-hidden">
           <div class="title-hidden">
-            <h2 class="aondsl">Few notable examples in the textile</h2>
-            <h2 class="aondsl">industry are given below</h2>
+            <h2 class="aondsl">A Notable Example in the Retail Industry:</h2>
+            {/*<h2 class="aondsl">industry are given below</h2>*/}
           </div>
           <br />
 
           <div class="description-hidden">
-            The following are the few notable examples Arvind Limited, along
-            with brands like Otto, Ramraj, Faaso, Pothys, Saravana Stores, and
-            leading jewelry brands such as GRT and Lalitha Jewelry, have
-            successfully focused on producing high-quality tailored solutions,
-            embracing sustainability, and launching direct-to-consumer
-            initiatives. This strategic shift allowed these companies to tap
-            into evolving consumer preferences, resulting in increased sales and
-            stronger customer loyalty.
+            Companies like Otto, Ramraj, Faasos, Pothys, Saravana Stores, GRT,
+            and Lalitha Jewelry have achieved significant success by putting
+            their customers at the center of their business strategies. These
+            brands focus on understanding evolving customer preferences, which
+            has allowed them to build strong, lasting relationships with their
+            audience.
+            <br /> <br />
+            By consistently meeting the needs of their diverse customer base,
+            these companies have fostered loyalty, increased sales, and expanded
+            their presence in competitive markets. Their success highlights the
+            importance of prioritizing customer satisfaction as a key driver of
+            growth and sustainability.
+            <br /> <br />
+            These examples show that a customer-centric approach is vital for
+            success in the textile and retail industries.
           </div>
           <div className="dispsjkskskj232">
             <br />

@@ -36,10 +36,10 @@ export default function Homepage() {
   return (
     <div>
       <div className="videostyklebsavjhsd">
+        {/*onClick={SucessfullReatiler} */}
         <video
-          onClick={SucessfullReatiler}
           className="homePageHeroVideo"
-          src="./images/Gr-Website-Video-Compressed.mp4"
+          src="./images/Gr Website Video Compressed (1).mp4"
           controls
           autoPlay
           muted
@@ -47,9 +47,9 @@ export default function Homepage() {
           id="myVideo"
           style={{ cursor: "pointer" }}
         ></video>
-        {/* <button className="button-speech-bubble" onClick={SucessfullReatiler}>
+        <button className="button-speech-bubble" onClick={SucessfullReatiler}>
           Click here to Know the Answer <span> &gt;&gt; </span>
-        </button> */}
+        </button>
       </div>
       {/* <div className="container-speech-bubble" data-aos="fade-up">
         <div className="comparison-speech-bubble" ref={lastSectionRef}>
