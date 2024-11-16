@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step Diagram</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body,
+      html {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Arial", sans-serif;
+        background: #f4f4f4;
+      }
+
+      .steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .step {
+        background: #0bc5c5;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+        color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        width: 300px;
+      }
+
+      .icon {
+        background: white;
+        border-radius: 50%;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -25px;
+        top: 20px;
+      }
+
+      .icon img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .info {
+        margin-left: 30px;
+      }
+
+      .info h2 {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+      }
+
+      .info p {
+        font-size: 0.9em;
+      }
+
+      /* Add styles for the connecting lines if needed */
+    </style>
+  </head>
+  <body>
+    <div className="steps">
+      <div className="step" aria-label="Step 1">
+        <div className="icon"><img src="icon1.png" alt="Icon 1" /></div>
+        <div className="info">
+          <h2>Step 01</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div className="step" aria-label="Step 2">
+        <div className="icon"><img src="icon2.png" alt="Icon 2" /></div>
+        <div className="info">
+          <h2>Step 02</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div className="step" aria-label="Step 3">
+        <div className="icon"><img src="icon3.png" alt="Icon 3" /></div>
+        <div className="info">
+          <h2>Step 03</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div className="step" aria-label="Step 4">
+        <div className="icon"><img src="icon4.png" alt="Icon 4" /></div>
+        <div className="info">
+          <h2>Step 04</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
