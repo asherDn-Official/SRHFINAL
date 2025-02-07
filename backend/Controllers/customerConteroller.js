@@ -3,24 +3,18 @@ const Customer = require("../Models/customer");
 // Create a new customer
 exports.createCustomer = async (req, res) => {
   try {
-    const {
-      customerName,
-      customerEmail,
-      storeName,
-      customerMobile,
-      usedAction,
-    } = req.body;
+    const { customerName, customerEmail, customerMobile, usedAction } =
+      req.body;
 
     // Check for existing email
-    // const existingCustomer = await Customer.findOne({ customerEmail });
-    // if (existingCustomer) {
-    //   return res.status(400).json({ message: "Email already exists" });
-    // }
+    const existingCustomer = await Customer.findOne({ customerEmail });
+    if (existingCustomer) {
+      return res.status(400).json({ message: "Email already exists" });
+    }
 
     const newCustomer = new Customer({
       customerName,
       customerEmail,
-      storeName,
       customerMobile,
       usedAction,
     });
@@ -58,17 +52,12 @@ exports.getCustomerById = async (req, res) => {
 // Update a customer by ID
 exports.updateCustomer = async (req, res) => {
   try {
-    const {
-      customerName,
-      customerEmail,
-      storeName,
-      customerMobile,
-      usedAction,
-    } = req.body;
+    const { customerName, customerEmail, customerMobile, usedAction } =
+      req.body;
 
     const updatedCustomer = await Customer.findByIdAndUpdate(
       req.params.id,
-      { customerName, customerEmail, storeName, customerMobile, usedAction },
+      { customerName, customerEmail, customerMobile, usedAction },
       { new: true, runValidators: true }
     );
 

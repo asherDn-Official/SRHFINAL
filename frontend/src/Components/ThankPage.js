@@ -6,8 +6,8 @@ const ThankYouPage = () => {
       <div className="thank-you-card">
         <h1 className="thank-you-heading">Thank You!</h1>
         <p className="thank-you-message">
-          Thank you for joining our community! We're thrilled to have you on
-          board.
+          We appreciate your feedback. Your response has been recorded
+          successfully.
         </p>
         <button
           className="return-button"

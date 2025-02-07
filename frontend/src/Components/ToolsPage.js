@@ -9,22 +9,14 @@ export default function ToolsPage() {
     formTitle: "",
     reason: "",
   });
-  const API_URI = "https://superstarretailer.com";
+
   // tools page:
   const handleClose = () => setShow(false);
   const handleShow = (toolName, actionType) => {
     setSelectedTool({ toolName, actionType });
     setShow(true);
   };
-  const handleDownload = (reason) => {
-    const link = `${API_URI}/${reason}.xlsx`;
-    const a = document.createElement("a");
-    a.href = link;
-    a.download = `${reason}.xlsx`; // Specify the file name
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  };
+
   return (
     <div>
       <div>
@@ -32,50 +24,37 @@ export default function ToolsPage() {
           <div className="container-tool hero-content-tool">
             <div className="content-tool">
               <h1>
-                {/* Unlocking Potential: */}
+                Unlocking Potential:
                 <br />
-                Purpose of the Tools :
+                Your Pathway to Retail Excellence
               </h1>
               <p className="paratool">
-                The SuperStar Retailers tools help businesses improve by
-                measuring Average Order Value and identifying key customers and
-                products using the 80-20 Rule, while the 5 Whys technique
-                uncovers root causes of problems.
+                Welcome to SuperStar Retailers Hub! We’re here to empower your
+                business growth every step of the way. Our specialized tools and
+                resources are designed to help you refine strategies, streamline
+                operations, and seize new market opportunities. We understand
+                the challenges retailers face and are committed to making your
+                journey smoother and more rewarding. With our guidance, you can
+                confidently tackle business hurdles and achieve your goals.
+                Let’s transform challenges into successes together!
               </p>
-
-              <h1>
-                {/* Unlocking Potential: */}
-                <br />
-                Benefits of the Tools :
-              </h1>
               <p className="paratool">
-                These tools enable businesses to increase revenue through
-                upsells, focus on top customers and products, and quickly solve
-                issues to enhance operations.
+                We recognize the challenges you face daily and are dedicated to
+                making your retail experience as rewarding as possible. With our
+                tailored support, you can seamlessly navigate through the
+                complexities of business management, ensuring that every
+                decision leads you closer to your goals. Let's embark on this
+                path of continuous learning and improvement together,
+                transforming challenges into stepping stones for success.
               </p>
-
-              <h1>
-                {/* Unlocking Potential: */}
-                <br />
-                Overall Impact
-              </h1>
-              <p className="paratool">
-                Together, these tools provide valuable insights that help
-                retailers make smart decisions and grow their businesses
-                successfully.
-              </p>
-
               <p className="tagline-tool">
                 Nurture | Guide | Optimize | Support | Transform
               </p>
-              {/* <div className="buttondivvintools">
-                <button className="buttonontools">Download</button>
-              </div> */}
             </div>
             <div className="image-tool">
               <img
                 className="photo-images"
-                src="./images/GrowthToolImage.jpeg"
+                src="./images/toolsimages.png"
                 alt="Businessman reviewing documents"
               />
             </div>
@@ -99,19 +78,10 @@ export default function ToolsPage() {
                   promoting upsells, cross-sells, or bundles to boost revenue.
                 </p>
                 <button
-                  onClick={async () => {
-                    await handleShow("cartValue", "DirectDownload");
-                    //handleDownload("cartValue");
-                  }}
-                  class="tool-button"
-                >
-                  Download
-                </button>
-                <button
                   onClick={() => handleShow("cartValue", "download")}
                   class="tool-button"
                 >
-                  Share to whatsapp
+                  Download
                 </button>
               </div>
             </div>
@@ -129,19 +99,10 @@ export default function ToolsPage() {
                   more growth efficiently.
                 </p>
                 <button
-                  onClick={async () => {
-                    await handleShow("80-20", "DirectDownload");
-                    // handleDownload("80-20");
-                  }}
-                  class="tool-button"
-                >
-                  Download
-                </button>
-                <button
                   onClick={() => handleShow("80-20", "download")}
                   class="tool-button"
                 >
-                  Share to whatsapp
+                  Download
                 </button>
               </div>
               <img
@@ -163,19 +124,10 @@ export default function ToolsPage() {
                   "Why?" repeatedly, until the fundamental issue is uncovered.
                 </p>
                 <button
-                  onClick={async () => {
-                    await handleShow("5why", "DirectDownload");
-                    // handleDownload("5why");
-                  }}
-                  class="tool-button"
-                >
-                  Download
-                </button>
-                <button
                   onClick={() => handleShow("5why", "download")}
                   class="tool-button"
                 >
-                  Share to whatsapp
+                  Download
                 </button>
               </div>
             </div>

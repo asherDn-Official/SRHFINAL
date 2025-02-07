@@ -30,13 +30,6 @@ exports.sendWhatsApp = async (req, res) => {
     //   campaignName = "SRH_OTP";
     //   templateParams = ["123456"]; // Assume OTP is generated
     //   break;
-
-    case "DirectDownload":
-      return res.status(200).json({ message: "successful" });
-    case "story":
-      return res.status(200).json({ message: "successful" });
-    case "purchase":
-      return res.status(200).json({ message: "successful" });
     default:
       return res.status(400).json({ error: "Invalid reason provided" });
   }
