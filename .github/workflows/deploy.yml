@@ -1,37 +1,23 @@
-name: Deploy to AWS EC2
+name: Deploy to EC2
 
 on:
   push:
     branches:
-      - main  # Change to your deployment branch
+      - main  # Set this to the branch you want to deploy from (e.g., `main` or `production`)
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Uses the latest Ubuntu runner
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v2  # Checks out your code to the GitHub Actions runner
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Set up SSH key
+        uses: webfactory/ssh-agent@v0.5.3  # Uses SSH agent to enable SSH authentication
         with:
-          node-version: '18'
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}  # Uses the SSH key from GitHub Secrets
 
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Deploy via SSH
-        env:
-          PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          HOST: ${{ secrets.AWS_HOST }}
-          USER: ${{ secrets.AWS_USER }}
+      - name: Deploy to EC2
         run: |
-          echo "$PRIVATE_KEY" > private_key.pem
-          chmod 600 private_key.pem
-          ssh -i private_key.pem -o StrictHostKeyChecking=no $USER@$HOST << 'EOF'
-            cd /path/to/your/project
-            git pull origin main
-            npm install --production
-            pm2 restart all
-          EOF
+          ssh -o StrictHostKeyChecking=no ec2-user@16.171.19.234 "cd /home/ec2-user/SRHFINAL/backend && git pull origin main && npm install && pm2 restart all"
