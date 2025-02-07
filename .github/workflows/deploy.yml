@@ -20,4 +20,4 @@ jobs:
 
       - name: Deploy to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@16.171.19.234 "cd /home/ec2-user/SRHFINAL/backend && git pull origin main && npm install && pm2 restart all"
+          ssh -o StrictHostKeyChecking=no ec2-user@16.171.19.234 "cd /home/ec2-user/SRHFINAL/backend && git pull origin main && npm install && forever restartall"
