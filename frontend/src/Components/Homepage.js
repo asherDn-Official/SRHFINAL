@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import Imageslider from "./Image-Slider";
 import StoryBoard from "./StoryBoard";
 import JSConfetti from "js-confetti";
+// import video1 from '../../public/images/herovideo.mp4'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,6 +13,7 @@ export default function Homepage() {
   useEffect(() => {
     AOS.init();
   });
+
   const navigate = useNavigate();
 
   const location = useLocation();
@@ -36,27 +38,50 @@ export default function Homepage() {
   return (
     <div>
       <div className="videostyklebsavjhsd">
-        <video
+        {/*onClick={SucessfullReatiler} */}
+        {/* <div className=" video-container "> */}
+
+         <video
+            className="homePageHeroVideo hero-video"
+            src="./images/Gr Website Video Compressed (1).mp4"
+            // src={video1.src}
+            controls
+            autoPlay
+            muted
+            loop
+            id="myVideo"
+            style={{ cursor: "pointer" }}
+          ></video> 
+
+        {/* <iframe
           className="homePageHeroVideo"
-          src="./images/Gr-Website-Video-Compressed.mp4"
-          controls
-          autoPlay
-          muted
-          loop
-          id="myVideo"
-        ></video>
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/LIzWTfn5mi4?si=c2Cjt7wIEcOjN035"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe> */}
+
+        {/* </div> */}
+
+        <button className="button-speech-bubble" onClick={SucessfullReatiler}>
+          Click here to Know the Answer <span> &gt;&gt; </span>
+        </button>
       </div>
-      <div className="container-speech-bubble" data-aos="fade-up">
+      {/* <div className="container-speech-bubble" data-aos="fade-up">
         <div className="comparison-speech-bubble" ref={lastSectionRef}>
           <div className="person-speech-bubble">
             <img
-              src="./images/SRHHeroBannerLeftImage.png"
+              src="./images/SRHHeroBannerLeftImage.webp"
               alt="Product Focus Person"
             />
           </div>
           <div className="person-speech-bubble">
             <img
-              src="./images/SRHHeroBannerRightImage.png"
+              src="./images/SRHHeroBannerRightImage.webp"
               alt="Customer Focus Person"
             />
           </div>
@@ -67,7 +92,7 @@ export default function Homepage() {
         <button className="button-speech-bubble" onClick={SucessfullReatiler}>
           Click here to Know the Answer <span> &gt;&gt; </span>
         </button>
-      </div>
+      </div> */}
 
       <div className="banner-container">
         <div className="star-container">
@@ -136,18 +161,30 @@ export default function Homepage() {
                   Why SuperStar Retailers Hub?
                 </div>
                 <div className="superstarwhy">
-                  At SuperStar Retailers Hub, we believe that every Retail
+                  {/* At SuperStar Retailers Hub, we believe that every Retail
                   business deserves a chance to shine. Our goal is to help small
                   retailers grow by focusing on what matters most—their
                   customers. We provide tools and strategies that are easy to
                   understand and apply, so that even a beginner can use them to
-                  improve their business.
+                  improve their business. */}
+                  We at SuperStar Retailers Hub believe that any Retail business
+                  deserves a chance to shine. One thing is more important than
+                  everything else, and that is one's customers. So we try to
+                  provide tools and strategies, easy to understand and apply
+                  even for a beginner, to make them useful in his quest for
+                  improving business.
                 </div>
                 <div className="superstarwhy1">
-                  Our mission is simple: to help small businesses connect better
+                  {/* Our mission is simple: to help small businesses connect better
                   with their customers and grow steadily. We want to make sure
                   that every small business owner, like myself, can overcome
-                  challenges and achieve their dreams.
+                  challenges and achieve their dreams. */}
+                  We feel that our mission is self-explanatory: to connect Small
+                  & medium businesses and allow them to touch base with their
+                  customers and steadily grow. Our desire is to help ensure that
+                  every small business owner becomes able to overcome any
+                  obstacles and work towards his/her dream, as my company had to
+                  do.
                 </div>
                 <div className="superstarwhy2">
                   Join us on this journey to growth and success!
@@ -158,6 +195,7 @@ export default function Homepage() {
         </div>
         <div className="container-solve">
           <h1 className="whatwesolvediv">What we Solve</h1>
+          
           <div class="card-container">
             <div class="card-wrapper">
               <div class="card light">
@@ -225,7 +263,7 @@ export default function Homepage() {
                   />
                   <div class="details-text">
                     <div class="newCardTextContent">
-                      Cost - Marketing Feels Like a Money Pit
+                      Cost - Marketing Feels Like a Expense Trap
                     </div>
                   </div>
                 </div>
@@ -236,9 +274,10 @@ export default function Homepage() {
                     alt=""
                   />
                   <div class="secondsidecardimagesection">
-                    Marketing expenses can skyrocket without clear results. We
-                    optimize your marketing efforts to ensure every rupee spent
-                    brings you closer to your goals.
+                    Marketing expenses can quickly add up without visible
+                    results. We make sure every rupee you spend on marketing
+                    works harder for you, helping you reach your goals without
+                    wasting money
                   </div>
                 </div>
               </div>
@@ -341,7 +380,7 @@ export default function Homepage() {
                   />
                   <div class="details-text">
                     <div class="newCardTextContent">
-                      Community - Feeling Disconnected
+                      Community - Feeling Out of Business Support
                     </div>
                   </div>
                 </div>
@@ -369,7 +408,7 @@ export default function Homepage() {
                   />
                   <div class="details-text">
                     <div class="newCardTextContent">
-                      Omnipresence - Multitasking Overload
+                      Not Aware of Omnipresence
                     </div>
                   </div>
                 </div>
@@ -380,9 +419,9 @@ export default function Homepage() {
                     alt=""
                   />
                   <div class="secondsidecardimagesection">
-                    Being present across all platforms is overwhelming. We
-                    create a strategy that makes your brand visible and
-                    influential, wherever your customers are.
+                    It makes your brand easy to find—on social media, in-store,
+                    WhatsApp, calls. We help you stay top of mind everywhere
+                    your customers are, boosting visibility and growth.
                   </div>
                 </div>
               </div>
@@ -424,33 +463,30 @@ export default function Homepage() {
       </div>
       <div className="container-ranjith" data-aos="fade-up">
         <div className="image-ranjith">
-          <img src="./images/Group 742.png" alt="Ranjith" />
+          <img src="./images/GrowthRanjithCEO.webp" alt="Ranjith" />
         </div>
         <div className="text-ranjith">
           <div className="title-ranjith">Growth Ranjith's Journey:</div>
           <div className="subtitle-ranjith">From Struggles to Success</div>
           <p className="paragraph-ranjith">
-            Hi there, I'm Ranjith. My journey hasn't been easy. I didn't have a
-            safety net or support system. I had to carve my own path, starting
-            from zero. There was a turning point in my life that I named the
-            "Annamalai Challenge." It was the springboard that propelled my
-            growth. With a humble starting salary of Rs.1500, I now bring home
-            an income in lakhs. I've even bought a 1.5 crore house for my mom.
+            <span>I'm Growth Ranjith </span> <br />
+            <span>Customer Growth Expert </span>
+            <br /> I started my own communication company when I was just 18
+            years old. Being the first in my family to go to college and
+            graduate, I learned the value of building strong connections with
+            customers through my own experiences.
           </p>
           <p className="paragraph-ranjith">
-            At 18, I started my own communications company. I was the
-            trailblazer in my family, the first to attend and graduate college.
-            It was through all this that I grasped how crucial nurturing solid
-            customer relationships can be.
+            <span>Turning Point :</span> <br />
+            During the pandemic, big companies survived thanks to strong
+            customer data management and connections, while small Retail
+            businesses struggled.
           </p>
           <p className="paragraph-ranjith">
-            During the COVID-19 wave, well-established corporate companies had a
-            cushion - their strong data management and connections. In contrast,
-            small-scale retail businesses found it tougher to cope. I put on my
-            Customer Growth Expert hat and saw this gap as a window of
-            opportunity. I set up programs designed to help these retail
-            businesses expand by focusing on customers. From this idea, the
-            SuperStar Retailers Hub was born.
+            <span>Growth Path : </span> <br /> As a Customer Growth Expert, I
+            created programs to help small and medium retail businesses grow
+            through Customer Focus approaches and founded the SuperStar
+            Retailers Hub.
           </p>
         </div>
       </div>

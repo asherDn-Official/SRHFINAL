@@ -16,24 +16,33 @@ const ConfettiComponent = () => {
     <div>
       <header class="hidden-hidden">
         <div class="image-container-hidden">
-          <img src="./images/prodsonf.png" alt="Smiling Man" />
+          <img src="./images/prodsonf.webp" alt="Smiling Man" />
         </div>
         <div class="content-hidden">
           <div class="title-hidden">
-            <h2 class="aondsl">A notable example in the textile</h2>
-            <h2 class="aondsl">industry is Arvind Limited.</h2>
+            <h2 class="aondsl">A Notable Example in the Retail Industry:</h2>
+            {/*<h2 class="aondsl">industry are given below</h2>*/}
           </div>
           <br />
 
           <div class="description-hidden">
-            Arvind Limited, initially focused on producing high-quality tailored
-            solutions, focusing on sustainability, and launching
-            direct-to-consumer brands like Flying Machine. This transition
-            allowed them to tap into changing consumer preferences, leading to
-            increased sales and stronger customer loyalty.
+            Companies like Otto, Ramraj, Faasos, Pothys, Saravana Stores, GRT,
+            and Lalitha Jewelry have achieved significant success by putting
+            their customers at the center of their business strategies. These
+            brands focus on understanding evolving customer preferences, which
+            has allowed them to build strong, lasting relationships with their
+            audience.
+            <br /> <br />
+            By consistently meeting the needs of their diverse customer base,
+            these companies have fostered loyalty, increased sales, and expanded
+            their presence in competitive markets. Their success highlights the
+            importance of prioritizing customer satisfaction as a key driver of
+            growth and sustainability.
+            <br /> <br />
+            These examples show that a customer-centric approach is vital for
+            success in the textile and retail industries.
           </div>
           <div className="dispsjkskskj232">
-            <br />
             <br />
             <br />
           </div>

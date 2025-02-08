@@ -243,42 +243,42 @@ export default function Sixphase() {
           <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
-              src="/images/firstSixPhase.png"
+              src="/images/firstSixPhase.webp"
               alt=""
             />
           </div>
           <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
-              src="/images/secondSixPhase.png"
+              src="/images/secondSixPhase.webp"
               alt=""
             />
           </div>
           <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
-              src="/images/thirdSixPhase.png"
+              src="/images/thirdSixPhase.webp"
               alt=""
             />
           </div>
           <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
-              src="/images/fourthSixPhase.png"
+              src="/images/fourthSixPhase.webp"
               alt=""
             />
           </div>
           <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
-              src="/images/fifthSixPhase.png"
+              src="/images/fifthSixPhase.webp"
               alt=""
             />
           </div>
           <div className="sixthSixPhasemargin" data-aos="fade-up">
             <img
               className="sixnkejk423jk3434"
-              src="/images/sixthSixPhase.png"
+              src="/images/sixthSixPhase.webp"
               alt=""
             />
           </div>

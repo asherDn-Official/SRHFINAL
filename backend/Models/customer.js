@@ -8,17 +8,16 @@ const customerSchema = new mongoose.Schema(
       trim: true,
       minlength: 2,
     },
+    storeName: {
+      type: String,
+    },
     customerEmail: {
       type: String,
       required: true,
-      unique: true,
-      lowercase: true,
-      match: [/.+\@.+\..+/, "Please fill a valid email address"],
     },
     customerMobile: {
       type: String,
       required: true,
-      match: [/^[0-9]{10}$/, "Please provide a valid 10-digit phone number"],
     },
     usedAction: {
       type: String,
@@ -26,6 +25,6 @@ const customerSchema = new mongoose.Schema(
     },
   },
   { timestamps: true }
-); // Adds createdAt and updatedAt fields
+);
 
 module.exports = mongoose.model("Customer", customerSchema);

@@ -33,7 +33,24 @@ body {
 .groupphotoimagesssrkit {
   width: 80%;
 }
-
+.buttonontools {
+  width: 150px;
+  border-radius: 15px;
+  background-color: #ec396f;
+  color: #fff;
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 7px 1px;
+}
+.buttonontools:hover {
+  background-image: linear-gradient(to left, #313166, #ec396f);
+}
+.buttondivvintools {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 .ssrkitbackground {
   background-color: #e5e5f1;
   background-image: radial-gradient(rgba(255, 255, 255, 0.5));
@@ -518,7 +535,7 @@ body {
 /* ------------------------------------HomePage-------------------------- */
 /* start moving */
 .banner-container {
-  width: 100%;
+  /* width: 100%; */
   padding: 20px;
   background-color: #ffffff;
   border-top: 1px solid #ccc;
@@ -875,6 +892,13 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
+.paragraph-ranjith span {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .container-ranjith {
@@ -892,7 +916,7 @@ h1 {
   }
 
   .subtitle-ranjith {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .paragraph-ranjith {
@@ -901,6 +925,24 @@ h1 {
 }
 
 /* /////////////////////////////////////////////////////////////////////////////-speech-bubble */
+.button-speech-bubble {
+  position: absolute;
+  top: 85%; /* Adjust this to position the button vertically */
+  left: 50%; /* Adjust this to position the button horizontally */
+  transform: translate(-50%, -50%); /* Centers the button */
+  padding: 10px 20px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: semi-transparent background */
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1; /* Ensures the button is on top of the video */
+}
 
 /* .container-speech-bubble {
     text-align: center;
@@ -1086,6 +1128,7 @@ header {
 .back-button {
   display: inline-block;
   padding: 8px 16px;
+  margin-top: 10px;
   background-color: #ec396f;
   color: #ffffff;
   border: none;
@@ -1196,9 +1239,9 @@ header {
   }
   .question-speech-bubble,
   .button-speech-bubble {
-    font-size: 1em;
+    font-size: 0.5em;
     padding: 8px 16px;
-    margin-top: 14px;
+    margin-top: 1px;
   }
 }
 /* ------------------------------------HomePage-------------------------- */
@@ -1218,6 +1261,7 @@ header {
 .hero-content-tool {
   display: flex;
   flex-direction: row;
+  column-gap: 40px;
 }
 .content-tool {
   flex: 1;
@@ -1255,7 +1299,7 @@ header {
   margin-bottom: 15px;
 }
 .photo-images {
-  max-width: 100%;
+  max-width: 88%;
   height: auto;
 }
 .tagline-tool {
@@ -1679,7 +1723,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #b8f7ff;
   color: white;
   position: sticky;
   top: 0;
@@ -1777,6 +1821,20 @@ nav .menu span {
     display: flex;
     padding: 0px;
   }
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    opacity: 0;
+  }
+
+  nav ul.open {
+    max-height: 300px; /* Adjust based on content height */
+    opacity: 1;
+    padding: 0px;
+  }
 
   nav ul li {
     width: 100%;
@@ -1830,8 +1888,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f4f8;
+  /* height: 100vh; */
+  /* background-color: #f0f4f8; */
 }
 
 .thank-you-card {
@@ -1839,7 +1897,7 @@ ul {
   border-radius: 8px;
   padding: 40px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .thank-you-heading {
@@ -1856,7 +1914,7 @@ ul {
 
 .return-button {
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: #ec396f;
   color: white;
   border: none;
   border-radius: 4px;
@@ -1866,7 +1924,7 @@ ul {
 }
 
 .return-button:hover {
-  background-color: #45a049;
+  background-image: linear-gradient(to left, #313166, #ec396f);
 }
 
 /* ------------------------------------Thank Page -------------------------- */
@@ -1912,8 +1970,23 @@ ul {
   position: relative;
   left: 23px;
 }
+span {
+  font-weight: 700;
+}
 .tool-image3 {
   display: none;
+}
+.buttononwhypurchase {
+  /* width: 24%; */
+  padding: 8px 20px 8px 20px;
+  background: #ec396f;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  margin-right: 30px;
+}
+.buttononwhypurchase:hover {
+  background-image: linear-gradient(to left, #313166, #ec396f);
 }
 .tool-content {
   flex: 1;
@@ -1933,6 +2006,7 @@ ul {
 .tool-button {
   background-color: #ec396f;
   color: white;
+  margin-right: 14px;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -1948,6 +2022,32 @@ ul {
   .tool-item,
   .tool-item:nth-child(even) {
     flex-direction: column;
+  }
+  .buttononwhypurchase {
+    width: 50%;
+    padding: 7px 20px 7px 20px;
+    background: #ec396f;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    margin-right: 30px;
+  }
+  .buttononwhypurchase:hover {
+    background-image: linear-gradient(to left, #313166, #ec396f);
+  }
+  .tool-button {
+    background-color: #ec396f;
+    color: white;
+    margin-right: 14px;
+    border: none;
+    padding: 7px 9px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .tool-button:hover {
+    background-image: linear-gradient(to right, #ec396f, #41438e);
   }
   .tool-image {
     width: 70%;
@@ -2170,6 +2270,9 @@ small {
 
 .homePageHeroVideo {
   width: 100%;
+  /* height: 100vh; */
+  max-height: 100vh;
+  object-fit: cover;
 }
 
 .sixthSixPhasemargin {
@@ -2220,10 +2323,24 @@ small {
 /* Chandru-CSS */
 
 @media (max-width: 900px) {
+  .paragraph-ranjith span {
+    font-size: 18px;
+  }
+
   .star {
     width: 20px;
     height: 20px;
     margin: 0 2px;
+  }
+  .buttonontools {
+    width: 150px;
+    border-radius: 15px;
+    background-color: #ec396f;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 7px 1px;
   }
   .banner-container {
     width: 100%;
@@ -2257,6 +2374,9 @@ small {
 }
 .videostyklebsavjhsd {
   background-color: #bbf6ff;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* Chandru-CSS */
@@ -2343,6 +2463,7 @@ small {
     margin-top: 15px;
   }
   .superstarkitgif {
+    height: 180px;
     width: 48%;
   }
   .image-ranjith {
@@ -2443,12 +2564,17 @@ small {
     text-align: left;
   }
   .card-container {
-    padding-top: 50px;
+    /* padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    padding-bottom: 25px;
+    padding-bottom: 25px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
   .whatwesolvediv {
     text-align: center;
@@ -2512,6 +2638,7 @@ small {
 
   .homePageHeroVideo {
     width: 100%;
+    object-fit: cover;
   }
   .container-speech-bubble {
     text-align: center;
@@ -2743,7 +2870,7 @@ small {
   }
   .underthecapcontent {
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: #fff;
     margin-top: 41px;
@@ -2808,6 +2935,7 @@ small {
   }
   .dispsjkskskj232 {
     display: none;
+    height: 10px;
   }
   .back-button {
     display: inline-block;
@@ -2863,6 +2991,28 @@ small {
   font-weight: 500;
 }
 
+
+/* ***************************** */
+/* .video-container{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ */
+
+
+
 /* //////////////////// */
 
 .Superhundredvh {
@@ -2886,8 +3036,8 @@ small {
   width: 40%;
 }
 .buttonclass {
-  width: 20%;
-  padding: 8px 20px 8px 20px;
+  /* width: 24%; */
+  padding: 8px 50px 8px 50px;
   background: #ec396f;
   border: none;
   border-radius: 20px;
@@ -2904,6 +3054,11 @@ small {
   margin-top: 50px;
 }
 .Superimagedivv {
+}
+
+.dispsjkskskj232 {
+  display: none;
+  height: 30px;
 }
 
 .growthimg {
@@ -2926,6 +3081,20 @@ small {
     flex-direction: column;
     column-gap: 4%;
   }
+  .buttonontools {
+    width: 102px;
+    border-radius: 15px;
+    background-color: #ec396f;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 4px 0px;
+  }
+  .buttonontools:hover {
+    background-image: linear-gradient(to left, #313166, #ec396f);
+  }
+
   .content {
     /* padding-top: 100px; */
     color: #070707;
@@ -2939,21 +3108,25 @@ small {
     width: 100%;
   }
   .buttonclass {
-    width: 30%;
+    width: 50%;
     padding: 8px 20px 8px 20px;
     background: #ec396f;
     border: none;
     /* cursor: pointer; */
     border-radius: 20px;
     color: #fff;
+    margin-right: 30px;
   }
 
   .buttondivv {
     display: flex;
     justify-content: center;
-    margin-top: 22px;
+    flex-direction: column;
+    /* margin-top: 38px; */
+    align-items: center;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+    row-gap: 10px;
   }
 
   .growthimg {
@@ -2991,7 +3164,7 @@ small {
     width: 100%;
   }
   .buttonclass {
-    width: 30%;
+    /* width: 30%; */
     padding: 8px 20px 8px 20px;
     background: #ec396f;
     border: none;
@@ -3034,3 +3207,132 @@ small {
     width: 100%;
   }
 }
+
+/* SRH-FrameworkPage */
+
+/* .frameworkHeading {
+  color: #ffffff;
+  font-size: 33px;
+  font-weight: 550;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.frameworkBackground {
+  background-color: #1e206d;
+}
+
+.frameworktext {
+  line-height: 1.6;
+  font-size: 17px;
+  text-align: justify;
+  margin-bottom: 15px;
+  color: #fff;
+} */
+
+.container-frameworkcode {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header-frameworkcode {
+  text-align: center;
+  margin-top: 50px;
+}
+.header-frameworkcode h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #313166;
+}
+/* .sub-div-frameworkcode {
+  display: flex;
+  justify-content: space-between;
+} */
+.description-frameworkcode {
+  text-align: center;
+  font-size: 18px;
+  color: #313166;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+.toggle-btn-frameworkcode {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #ec396f;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.language-toggle-frameworkcode {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* new code for toggle //////////////////////*/
+
+.toggle-button {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+}
+.toggleContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  border: 3px solid #ec396f;
+  border-radius: 20px;
+  background: #ec396f;
+  font-weight: bold;
+  color: #ec396f;
+  cursor: pointer;
+}
+.toggleContainer::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0%;
+  border-radius: 20px;
+  background: white;
+  transition: all 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer::before {
+  left: 50%;
+}
+.toggleContainer div {
+  padding: 6px;
+  text-align: center;
+  z-index: 1;
+}
+.toggleCheckbox {
+  display: none;
+}
+.toggleCheckbox:checked + .toggleContainer div:first-child {
+  color: white;
+  transition: color 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer div:last-child {
+  color: #313166;
+  transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:first-child {
+  color: #313166;
+  transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:last-child {
+  color: white;
+  transition: color 0.3s;
+}
+
+.eng-pdf {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+/* hero page video fix */
+
