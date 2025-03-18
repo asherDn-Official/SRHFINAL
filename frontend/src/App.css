@@ -2075,6 +2075,54 @@ html {
 
 /*---------------------- Card-Hover-Section-------------- */
 
+/* card hoverd secion ////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr !important; /* 2 columns for mobile */
+    gap: 10px !important; /* Reduce gap between cards for smaller screens */
+    padding: 10px !important; /* Reduce padding for smaller screens */
+  }
+
+  .card {
+    width: 100% !important; /* Ensure cards take full width of their container */
+    height: 260px !important;
+  }
+
+  .firstdideimagee {
+    width: 50% !important; /* Reduce image size for mobile */
+    margin-top: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .newCardTextContent {
+    font-size: 12px !important; /* Reduce font size for mobile */
+    line-height: 15px; /* Adjust line height for smaller screens */
+    width: 75% !important; /* Allow text to take full width */
+  }
+
+  .purchase-button-container {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Add padding for better spacing */
+    left: 0; /* Reset left position */
+    top: 0; /* Reset top position */
+    transform: perspective(1000px) rotateY(180deg) translateY(0)
+      translateZ(40px); /* Adjust transform for smaller screens */
+  }
+
+  .secondsidecardimagesection {
+    font-size: 13px !important;
+    line-height: 13px !important;
+    height: 151px !important;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .seocndimagesection {
+    width: 50% !important; /* Reduce image size for mobile */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+  }
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -3328,52 +3376,4 @@ small {
 .eng-pdf {
   font-size: 17px;
   font-weight: 600;
-}
-
-/* hero page video fix */
-@media (max-width: 480px) {
-  .card-container {
-    grid-template-columns: 1fr 1fr !important; /* 2 columns for mobile */
-    gap: 10px !important; /* Reduce gap between cards for smaller screens */
-    padding: 10px !important; /* Reduce padding for smaller screens */
-  }
-
-  .card {
-    width: 100% !important; /* Ensure cards take full width of their container */
-    height: 260px !important;
-  }
-
-  .firstdideimagee {
-    width: 50% !important; /* Reduce image size for mobile */
-    margin-top: 15px; /* Adjust margin for smaller screens */
-  }
-
-  .newCardTextContent {
-    font-size: 12px !important; /* Reduce font size for mobile */
-    line-height: 15px; /* Adjust line height for smaller screens */
-    width: 75% !important; /* Allow text to take full width */
-  }
-
-  .purchase-button-container {
-    width: 100%; /* Adjust width for smaller screens */
-    height: auto; /* Allow height to adjust based on content */
-    padding: 10px; /* Add padding for better spacing */
-    left: 0; /* Reset left position */
-    top: 0; /* Reset top position */
-    transform: perspective(1000px) rotateY(180deg) translateY(0)
-      translateZ(40px); /* Adjust transform for smaller screens */
-  }
-
-  .secondsidecardimagesection {
-    font-size: 13px !important;
-    line-height: 13px !important;
-    height: 151px !important;
-    padding: 5px;
-    text-align: center;
-  }
-
-  .seocndimagesection {
-    width: 50% !important; /* Reduce image size for mobile */
-    margin-top: 10px; /* Adjust margin for smaller screens */
-  }
 }
