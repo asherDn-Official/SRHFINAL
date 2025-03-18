@@ -9,8 +9,8 @@ export default function ToolsPage() {
     formTitle: "",
     reason: "",
   });
- const API_URI = "https://superstarretailer.com";
-  // const API_URI = "http://localhost:4000";
+  const API_URI = "https://superstarretailer.com";
+  // const API_URI = "https://superstarretailer.com";
   // tools page:
   const handleClose = () => setShow(false);
   const handleShow = (toolName, actionType) => {
