@@ -2272,7 +2272,7 @@ small {
   width: 100%;
   /* height: 100vh; */
   max-height: 100vh;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .sixthSixPhasemargin {
@@ -2571,7 +2571,7 @@ small {
     gap: 40px;
     padding-bottom: 25px; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -2991,7 +2991,6 @@ small {
   font-weight: 500;
 }
 
-
 /* ***************************** */
 /* .video-container{
   position: relative;
@@ -3010,8 +3009,6 @@ small {
   object-fit: cover;
 }
  */
-
-
 
 /* //////////////////// */
 
@@ -3333,6 +3330,4 @@ small {
   font-weight: 600;
 }
 
-
 /* hero page video fix */
-
