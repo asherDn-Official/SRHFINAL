@@ -1,60 +1,61 @@
 #whatsapp-widget {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #25D366;
-    box-shadow: 0 0 15px #25D366, 0 0 30px #25D366;
-    animation: glowing 1.5s infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 9999;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #25d366;
+  box-shadow: 0 0 15px #25d366, 0 0 30px #25d366;
+  animation: glowing 1.5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 /* Glowing Animation */
 @keyframes glowing {
-    0% {
-        box-shadow: 0 0 10px #25D366;
-    }
-    50% {
-        box-shadow: 0 0 25px #25D366, 0 0 50px #25D366;
-    }
-    100% {
-        box-shadow: 0 0 10px #25D366;
-    }
+  0% {
+    box-shadow: 0 0 10px #25d366;
+  }
+  50% {
+    box-shadow: 0 0 25px #25d366, 0 0 50px #25d366;
+  }
+  100% {
+    box-shadow: 0 0 10px #25d366;
+  }
 }
 #whatsapp-widget img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 /* Chat with Us Label */
 #whatsapp-label {
-    position: fixed;
-    bottom: 100px; /* Adjust for spacing above the widget */
-    right: 20px;
-	z-index:99;
-    background-color: #25D366;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    animation: fadeInOut 3s infinite;
-    opacity: 0;
+  position: fixed;
+  bottom: 160px; /* Adjust for spacing above the widget */
+  right: 20px;
+  z-index: 99;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  animation: fadeInOut 3s infinite;
+  opacity: 0;
 }
 /* Label Pop-Up Animation */
 @keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0;
-        transform: translateY(10px); /* Slight slide effect */
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(10px); /* Slight slide effect */
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

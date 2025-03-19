@@ -720,7 +720,6 @@ body {
 }
 .superstarkitgif {
   width: 70%;
-  display: none;
 }
 video::-webkit-media-controls {
   display: none !important;
