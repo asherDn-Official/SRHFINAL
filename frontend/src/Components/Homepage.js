@@ -41,17 +41,17 @@ export default function Homepage() {
         {/*onClick={SucessfullReatiler} */}
         {/* <div className=" video-container "> */}
 
-         <video
-            className="homePageHeroVideo hero-video"
-            src="./images/Gr Website Video Compressed (1).mp4"
-            // src={video1.src}
-            controls
-            autoPlay
-            muted
-            loop
-            id="myVideo"
-            style={{ cursor: "pointer" }}
-          ></video> 
+        <video
+          className="homePageHeroVideo hero-video"
+          src="./images/Gr Website Video Compressed (1).mp4"
+          // src={video1.src}
+          controls
+          autoPlay
+          muted
+          loop
+          id="myVideo"
+          style={{ cursor: "pointer" }}
+        ></video>
 
         {/* <iframe
           className="homePageHeroVideo"
@@ -195,7 +195,7 @@ export default function Homepage() {
         </div>
         <div className="container-solve">
           <h1 className="whatwesolvediv">What we Solve</h1>
-          
+
           <div class="card-container">
             <div class="card-wrapper">
               <div class="card light">
@@ -488,6 +488,14 @@ export default function Homepage() {
             through Customer Focus approaches and founded the SuperStar
             Retailers Hub.
           </p>
+          <iframe
+            title="SUPERSTAR_RETAILERS_HUB checkout widget"
+            src="https://nas.io/checkout-widget?communityCode=SUPERSTAR_RETAILERS_HUB&communitySlug=%2Fsuperstar-retailers-hub&buttonText=Join%20as%20member&buttonTextColorHex=%23000&buttonBgColorHex=%23fccb1d&widgetTheme=light&backgroundColorHex=%23fff"
+            width="100%"
+            height="320"
+            frameborder="0"
+            referrerpolicy="no-referrer"
+          ></iframe>
         </div>
       </div>
     </div>

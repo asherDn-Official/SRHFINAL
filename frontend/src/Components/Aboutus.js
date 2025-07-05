@@ -75,7 +75,7 @@ export default function Aboutus() {
           <h2>Connect with our Expert</h2>
           <p>Get personalized advice and solutions for your business needs.</p>
           <a
-            href="https://calendly.com/growthranjith/60min?month=2024-10"
+            href="https://calendly.com/growthranjith/1-1-meeting-with-growth-ranjith-30-min-clone"
             target="_blank"
             class="cta-button"
           >
