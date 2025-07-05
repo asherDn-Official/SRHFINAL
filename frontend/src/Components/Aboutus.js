@@ -83,10 +83,16 @@ export default function Aboutus() {
           </a>
         </div>
         <div class="banner-image">
-          <img
+          {/* <img
             data-aos="fade-up"
             data-aos-delay="700"
             src="./images/ranjithwithloptop.webp"
+            alt="Business expert with laptop"
+          /> */}
+          <img
+            data-aos="fade-up"
+            data-aos-delay="700"
+            src="./images/aboutus-ranjith.png"
             alt="Business expert with laptop"
           />
         </div>

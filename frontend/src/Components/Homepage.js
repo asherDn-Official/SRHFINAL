@@ -463,7 +463,8 @@ export default function Homepage() {
       </div>
       <div className="container-ranjith" data-aos="fade-up">
         <div className="image-ranjith">
-          <img src="./images/GrowthRanjithCEO.webp" alt="Ranjith" />
+          {/* <img src="./images/GrowthRanjithCEO.webp" alt="Ranjith" /> */}
+          <img src="./images/home-ranjith-image.png" alt="Ranjith" />
         </div>
         <div className="text-ranjith">
           <div className="title-ranjith">Growth Ranjith's Journey:</div>

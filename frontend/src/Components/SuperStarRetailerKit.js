@@ -20,9 +20,7 @@ export default function SuperStarRetailerKit() {
   return (
     <div>
       <div class="Superhundredvh">
-        <div class="Superimagedivv">
-          <img class="growthimg" src="./images/mockupImageNew.png" alt="" />
-        </div>
+        
         <div class="widthononeside">
           <div class="content">
             <div class="spandivv">
@@ -53,6 +51,10 @@ export default function SuperStarRetailerKit() {
               Purchase
             </button>
           </div>
+        </div>
+        <div class="Superimagedivv">
+          {/* <img class="growthimg" src="./images/mockupImageNew.png" alt="" /> */}
+          <img class="growthimg" src="./images/growth-ranjith-kit.png" alt="" />
         </div>
       </div>
       <div>

@@ -859,7 +859,8 @@ h1 {
 
 .image-ranjith img {
   max-width: 100%;
-  height: 750px;
+  height: auto;
+  margin-bottom: 15%;
 }
 
 .text-ranjith {
@@ -3047,10 +3048,12 @@ small {
 
 .buttondivv {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: 50px;
 }
 .Superimagedivv {
+  display: flex;
+  justify-content: center;
 }
 
 .dispsjkskskj232 {
@@ -3059,8 +3062,9 @@ small {
 }
 
 .growthimg {
-  /* padding: 17% 12px 10px 10%; */
-  width: 90%;
+  padding: 17px 12px 10px 10px;
+
+  width: 75%;
 }
 .spandivv {
   font-size: 37px;
