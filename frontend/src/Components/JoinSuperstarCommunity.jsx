@@ -302,7 +302,7 @@ const JoinSuperstarCommunity = () => {
             >
               <h2
                 style={{
-                  fontSize: "clamp(1.5rem, 4vw, 2.2rem)",
+                  fontSize: "clamp(1.5rem, 4vw, 1.8rem)",
                   fontWeight: "bold",
                   color: "#ffffff",
                   margin: 0,
@@ -525,7 +525,7 @@ const JoinSuperstarCommunity = () => {
                 window.open("https://nas.io/superstar-retailers-hub", "_blank")
               }
             >
-              Join the Community
+              Join Our Family
             </button>
 
             <p

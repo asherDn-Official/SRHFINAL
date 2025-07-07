@@ -312,7 +312,7 @@ export default function Sixphase() {
               window.open("https://nas.io/superstar-retailers-hub", "_blank")
             }
           >
-            Join the Community
+            Join Our Family
           </button>
         </div>
       </div>

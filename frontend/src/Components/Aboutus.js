@@ -78,14 +78,14 @@ export default function Aboutus() {
               window.open("https://nas.io/superstar-retailers-hub", "_blank")
             }
           >
-            Join the Community
+            Join Our Family
           </button>
         </div>
       </div>
 
       <div data-aos="fade-up" data-aos-delay="800">
         <div className="mainformdivcontainers" ref={firstSectionRef}>
-          <div className="CommunityForm">Join Our Family</div>
+          <div className="CommunityForm">Enquire Now</div>
           <div className="coummunityflexdiv">
             <div className="communitytextpara">
               Become a part of the Superstar Retailer Family! Join us today and

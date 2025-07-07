@@ -101,7 +101,7 @@ export default function ToolsPage() {
                   )
                 }
               >
-                Join the Community
+                Join Our Family
               </button>
 
               {/* <div className="buttondivvintools">

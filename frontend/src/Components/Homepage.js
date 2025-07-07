@@ -217,7 +217,7 @@ export default function Homepage() {
                     )
                   }
                 >
-                  Join the Community
+                  Join Our Family
                 </button>
               </div>
             </div>
@@ -543,7 +543,7 @@ export default function Homepage() {
               window.open("https://nas.io/superstar-retailers-hub", "_blank")
             }
           >
-            Join the Community
+            Join Our Family
           </button>
           {/* <iframe
             title="SUPERSTAR_RETAILERS_HUB checkout widget"
