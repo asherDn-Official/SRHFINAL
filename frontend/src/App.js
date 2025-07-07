@@ -18,6 +18,7 @@ import StoryBoard from "./Components/StoryBoard";
 import SuperStarRetailerKit from "./Components/SuperStarRetailerKit";
 import Example from "./Components/Popup";
 import Whatsapp from "./Components/Whatsapp";
+import JoinSuperstarCommunity from "./Components/JoinSuperstarCommunity";
 axios.defaults.withCredentials = true;
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/thankspage" element={<ThankYouPage />} />
           <Route path="/sucessfull-retailer" element={<Poppers />} />
           <Route path="/srhframework" element={<Srhframework />} />
+          <Route path="/join-as-Member" element={<JoinSuperstarCommunity />} />
           <Route
             path="/superstar-retailer-kit"
             element={<SuperStarRetailerKit />}
@@ -40,11 +42,7 @@ function App() {
         </Routes>
         <Footer />
         {/* <Example /> */}
-
-
         <Whatsapp />
-
-  
       </BrowserRouter>
     </div>
   );

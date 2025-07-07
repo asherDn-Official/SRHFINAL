@@ -46,6 +46,11 @@ export default function Header() {
             Superstar Retailer Kit
           </NavLink>
         </li>
+        <li>
+          <NavLink onClick={() => setMenuOpen(false)} to="/join-as-Member">
+            Join As Member
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

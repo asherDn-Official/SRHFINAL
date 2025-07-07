@@ -189,6 +189,36 @@ export default function Homepage() {
                 <div className="superstarwhy2">
                   Join us on this journey to growth and success!
                 </div>
+                <button
+                  style={{
+                    backgroundColor: "#ec396f",
+                    color: "white",
+                    marginTop: 20,
+                    border: "none",
+                    padding: "15px 30px",
+                    borderRadius: "25px",
+                    fontSize: "1.1rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.opacity = "0.9";
+                    e.currentTarget.style.transform = "scale(1.02)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.opacity = "1";
+                    e.currentTarget.style.transform = "scale(1)";
+                  }}
+                  onClick={() =>
+                    window.open(
+                      "https://nas.io/superstar-retailers-hub",
+                      "_blank"
+                    )
+                  }
+                >
+                  Join the Community
+                </button>
               </div>
             </div>
           </div>
@@ -471,7 +501,7 @@ export default function Homepage() {
           <div className="subtitle-ranjith">From Struggles to Success</div>
           <p className="paragraph-ranjith">
             <span>I'm Growth Ranjith </span> <br />
-            <span>Customer Growth Expert </span>
+            <span>Customer Focus Marketing Expert </span>
             <br /> I started my own communication company when I was just 18
             years old. Being the first in my family to go to college and
             graduate, I learned the value of building strong connections with
@@ -489,14 +519,40 @@ export default function Homepage() {
             through Customer Focus approaches and founded the SuperStar
             Retailers Hub.
           </p>
-          <iframe
+          <button
+            style={{
+              backgroundColor: "#ec396f",
+              color: "white",
+              border: "none",
+              padding: "15px 30px",
+              borderRadius: "25px",
+              fontSize: "1.1rem",
+              fontWeight: "bold",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.opacity = "0.9";
+              e.currentTarget.style.transform = "scale(1.02)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.opacity = "1";
+              e.currentTarget.style.transform = "scale(1)";
+            }}
+            onClick={() =>
+              window.open("https://nas.io/superstar-retailers-hub", "_blank")
+            }
+          >
+            Join the Community
+          </button>
+          {/* <iframe
             title="SUPERSTAR_RETAILERS_HUB checkout widget"
-            src="https://nas.io/checkout-widget?communityCode=SUPERSTAR_RETAILERS_HUB&communitySlug=%2Fsuperstar-retailers-hub&buttonText=Join%20as%20member&buttonTextColorHex=%23000&buttonBgColorHex=%23fccb1d&widgetTheme=light&backgroundColorHex=%23fff"
+            src="https://nas.io/checkout-widget?communityCode=SUPERSTAR_RETAILERS_HUB&communitySlug=%2Fsuperstar-retailers-hub&buttonText=Join%20as%20member&buttonTextColorHex=%23ffffff&buttonBgColorHex=%23ec396f&widgetTheme=light&backgroundColorHex=%23fff"
             width="100%"
             height="320"
             frameborder="0"
             referrerpolicy="no-referrer"
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
     </div>

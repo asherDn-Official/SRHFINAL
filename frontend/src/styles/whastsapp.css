@@ -1,6 +1,6 @@
 #whatsapp-widget {
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   z-index: 9999;
   width: 62px;
@@ -33,7 +33,7 @@
 /* Chat with Us Label */
 #whatsapp-label {
   position: fixed;
-  bottom: 90px; /* Adjust for spacing above the widget */
+  bottom: 170px; /* Adjust for spacing above the widget */
   right: 20px;
   z-index: 99;
   background-color: #25d366;

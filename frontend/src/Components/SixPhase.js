@@ -283,6 +283,38 @@ export default function Sixphase() {
             />
           </div>
         </div>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <button
+            style={{
+              backgroundColor: "#ec396f",
+              color: "white",
+              display: "flex",
+              justifyContent: "center",
+              marginTop: 20,
+              textAlign: "center",
+              border: "none",
+              padding: "15px 30px",
+              borderRadius: "25px",
+              fontSize: "1.1rem",
+              fontWeight: "bold",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.opacity = "0.9";
+              e.currentTarget.style.transform = "scale(1.02)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.opacity = "1";
+              e.currentTarget.style.transform = "scale(1)";
+            }}
+            onClick={() =>
+              window.open("https://nas.io/superstar-retailers-hub", "_blank")
+            }
+          >
+            Join the Community
+          </button>
+        </div>
       </div>
     </div>
   );

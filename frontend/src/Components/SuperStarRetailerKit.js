@@ -20,7 +20,6 @@ export default function SuperStarRetailerKit() {
   return (
     <div>
       <div class="Superhundredvh">
-        
         <div class="widthononeside">
           <div class="content">
             <div class="spandivv">
