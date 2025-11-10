@@ -1,23 +1,52 @@
-name: Deploy to EC2
+name: Deploy to EC2 (MERN + PM2)
 
 on:
   push:
     branches:
-      - main  # Set this to the branch you want to deploy from (e.g., `main` or `production`)
+      - main  # Trigger deployment when main branch is updated
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # Uses the latest Ubuntu runner
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2  # Checks out your code to the GitHub Actions runner
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: Set up SSH key
-        uses: webfactory/ssh-agent@v0.5.3  # Uses SSH agent to enable SSH authentication
+      - name: Set up SSH Key
+        uses: webfactory/ssh-agent@v0.8.0
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}  # Uses the SSH key from GitHub Secrets
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Deploy to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@16.171.19.234 "cd /home/ec2-user/SRHFINAL/backend && git pull origin main && npm install && forever restartall"
+          ssh -o StrictHostKeyChecking=no ec2-user@16.171.19.234 << 'EOF'
+            cd /home/ec2-user/SRHFINAL
+
+            echo "📦 Pulling latest changes..."
+            git fetch origin main
+            git reset --hard origin/main
+
+            echo "📁 Installing backend dependencies..."
+            cd backend
+            npm install
+
+            echo "🧠 Building frontend..."
+            cd ../frontend
+            npm install
+            npm run build
+
+            echo "📁 Moving frontend build to backend public directory..."
+            # rm -rf ../backend/public
+            # mkdir -p ../backend/public
+            # cp -r build/* ../backend/public/
+
+            echo "🚀 Restarting PM2 process..."
+            cd ../backend
+            pm2 restart "SRH-Single Port" || pm2 start index.js --name "SRH-Single Port"
+
+            echo "💾 Saving PM2 process list..."
+            pm2 save
+
+            echo "✅ Deployment successful!"
+          EOF
