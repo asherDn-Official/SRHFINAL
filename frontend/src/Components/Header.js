@@ -17,7 +17,7 @@ export default function Header() {
         <span></span>
         <span></span>
       </div>
-      <ul className={menuOpen ? "open" : ""}>
+      {/* <ul className={menuOpen ? "open" : ""}>
         <li>
           <NavLink onClick={() => setMenuOpen(false)} to="/">
             Home
@@ -51,7 +51,7 @@ export default function Header() {
             Join As Member
           </NavLink>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 }

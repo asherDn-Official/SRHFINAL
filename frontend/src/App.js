@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <Header />
         <Routes>
           <Route path="/" element={<Maintenance />} />
@@ -44,7 +44,7 @@ function App() {
         </Routes>
         <Footer />
         {/* <Example /> */}
-        <Whatsapp />
+        {/* <Whatsapp /> */}
       </BrowserRouter>
     </div>
   );
