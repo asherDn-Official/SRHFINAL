@@ -19,6 +19,7 @@ import SuperStarRetailerKit from "./Components/SuperStarRetailerKit";
 import Example from "./Components/Popup";
 import Whatsapp from "./Components/Whatsapp";
 import JoinSuperstarCommunity from "./Components/JoinSuperstarCommunity";
+import Maintenance from "./Components/Maintenance";
 axios.defaults.withCredentials = true;
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         <ScrollToTop />
         <Header />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Maintenance />} />
+          {/* <Route path="/" element={<Homepage />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/toolspage" element={<ToolsPage />} />
           <Route path="/sixphase" element={<Sixphase />} />
@@ -38,7 +40,7 @@ function App() {
           <Route
             path="/superstar-retailer-kit"
             element={<SuperStarRetailerKit />}
-          />
+          /> */}
         </Routes>
         <Footer />
         {/* <Example /> */}
